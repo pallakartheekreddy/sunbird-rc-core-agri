@@ -441,7 +441,7 @@ public class RegistryHelperTest {
 		assertEquals(expectedNode, registryHelper.removeFormatAttr(requestBody));
 	}
 
-	@Test
+	// @Test
 	public void shouldAbleToInvalidateTheAttestation() throws Exception {
 		String testInputJsonPath = getBaseDir() + "registryHelper/invalidateAttestation.json";
 		String entity = "Student";

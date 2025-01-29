@@ -1033,7 +1033,7 @@ public class RegistryHelper {
                     ObjectNode propertiesOSID = attestation.get("propertiesOSID").deepCopy();
                     JSONUtil.removeNode(propertiesOSID, uuidPropertyName);
                 }
-                ((ObjectNode) attestation).set(_osState.name(), JsonNodeFactory.instance.textNode(States.INVALID.name()));
+                // ((ObjectNode) attestation).set(_osState.name(), JsonNodeFactory.instance.textNode(States.INVALID.name()));
             } else if (attestation.get(_osState.name()).asText().equals(States.ATTESTATION_REQUESTED.name())) {
                 ObjectNode propertiesOSID = attestation.get("propertiesOSID").deepCopy();
                 JSONUtil.removeNode(propertiesOSID, uuidPropertyName);
